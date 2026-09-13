@@ -4,8 +4,8 @@
     "status": "awaiting_external_beta_review"
   },
   "android": {
-    "url": "https://github.com/AlexM999911/poker-finder-info/releases/download/android-0.9.0/PokerFinder-0.9.0.apk",
-    "version": "0.9.0",
-    "sha256": "f3583b65a08cd47f56eb203bc09416e033b9b75962c05d6e44ab039aab8d47e0"
+    "url": "https://github.com/AlexM999911/poker-finder-info/releases/download/android-0.10.0/PokerFinder-0.10.0.apk",
+    "version": "0.10.0",
+    "sha256": "0a2a9d3b14c260c790f5c5d093dca8797ba6799a12e1b4a532f4ba8fbf3af5f6"
   }
 }
