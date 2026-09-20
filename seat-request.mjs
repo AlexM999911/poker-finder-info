@@ -7,7 +7,7 @@ const put=(id,value)=>{$(id).textContent=value;};
 function saveInvitation(){if(invite)sessionStorage.setItem('poker.invitation',location.hash);}
 if(!invite && (location.hash.includes('access_token=') || location.search.includes('code=') || location.hash.includes('error='))){
  history.replaceState(null,'',location.pathname+(sessionStorage.getItem('poker.invitation')||''));invite=parseInvitation(location.hash);
- put('web-status','Email confirmation finished. Sign in below to continue.');
+ $('confirmation-status').hidden=false;put('confirmation-status',invite?'Email confirmation finished. Sign in below to continue.':'Email confirmation finished. Return to the original game invitation, then sign in to request your seat.');
 }
 saveInvitation();
 try{session=JSON.parse(sessionStorage.getItem('poker.web.session'));if(!session?.access_token || session.expires_at*1000<=Date.now())session=null;}catch{session=null;}
